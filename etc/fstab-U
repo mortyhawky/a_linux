@@ -1,0 +1,11 @@
+# /dev/nvme0n1p5
+UUID=b9475931-cd91-48e9-b207-254450257ca2  /      ext4   rw,relatime	0 1
+
+# /dev/nvme0n1p1 LABEL=EFI
+UUID=88BC-F01F                             /boot  vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme0n1p6
+UUID=77ee237c-7369-429e-98c9-6f7945afe776  /home  ext4   rw,relatime	0 2
+
+# /dev/sda3
+UUID=0BBB-57A0                             /a     exfat  defaults,rw,uid=1000,gid=1000,umask=0002 0 0

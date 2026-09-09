@@ -1,0 +1,12 @@
+# /dev/nvme0n1p5 UUID=ea54d55b-afc6-4f8e-93d2-5b67c296eee6
+LABEL=ROOT          	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p1 UUID=88BC-F01F
+LABEL=EFI           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme0n1p6 UUID=516f0e08-9f1d-4ce8-917b-3bad12932bae
+LABEL=HOME          	/home     	ext4      	rw,relatime	0 2
+
+# /dev/sda3 UUID=0BBB-57A0
+LABEL=Admin         	/a        	exfat     	rw,relatime,uid=1000,gid=1000,fmask=0002,dmask=0002,allow_utime=0020,iocharset=utf8,errors=remount-ro	0 2
+

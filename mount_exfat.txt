@@ -1,0 +1,40 @@
+Mounting an exFAT Drive in Linux Using fstab
+
+To mount an exFAT drive in Linux, you will need to edit the /etc/fstab file. This file controls how drives are mounted at system startup.
+Steps to Add an exFAT Entry in fstab
+
+    Identify the Drive UUID
+    Use the following command to find the UUID of your exFAT drive:
+
+    sudo blkid
+
+    Create a Mount Point
+    Create a directory where the drive will be mounted:
+
+    sudo mkdir -p /mnt/your_mount_point
+
+    Edit the fstab File
+    Open the /etc/fstab file in a text editor:
+
+    sudo nano /etc/fstab
+
+    Add the Entry
+    Add the following line to the end of the file, replacing your-drive-uuid and /mnt/your_mount_point with the actual UUID and mount point:
+
+    UUID=your-drive-uuid /mnt/your_mount_point exfat defaults 0 2
+
+    Test the Configuration
+    After saving the changes, test the configuration by running:
+
+    sudo mount -a
+
+Example fstab Entry
+UUID	Mount Point	File System Type	Mount Options	Dump	Fsck Order
+1234-5678	/mnt/usb_drive	exfat	defaults	0	2
+Important Notes
+
+    Ensure that the exfatprogs package is installed to handle exFAT filesystems.
+    If you encounter issues, check for case sensitivity in the filesystem type and ensure the mount point directory exists.
+    Use the command sudo umount /mnt/your_mount_point to unmount the drive before unplugging it.
+
+Following these steps will allow your exFAT drive to mount automatically at boot.

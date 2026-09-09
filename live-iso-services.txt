@@ -1,0 +1,17 @@
+           │ ├─ModemManager.service
+           x ├─dbus-broker.service
+           x ├─iwd.service
+           │ ├─polkit.service
+           │ ├─sshd.service
+           │ ├─systemd-homed.service
+           x ├─systemd-journald.service
+           x ├─systemd-logind.service
+           x ├─systemd-networkd.service
+           │ ├─systemd-nsresourced.service
+           x ├─systemd-resolved.service
+           │ ├─systemd-time-wait-sync.service
+           x ├─systemd-timesyncd.service
+           x ├─systemd-udevd.service
+           x └─systemd-userdbd.service
+               │ └─1124 grep --color=auto service
+               └─user@0.service
