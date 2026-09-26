@@ -2,7 +2,16 @@
 
 ```
 fdisk -l /dev/nvme0n1
+lsblk -o NAME,SIZE,LOG-SEC,PHY-SEC,MODEL
+
+NAME     SIZE LOG-SEC PHY-SEC MODEL
+loop0 1018.8M     512     512
+sda       52G     512     512 VBOX HARDDISK
+sr0      1.5G    2048    2048 VBOX CD-ROM
+r
 ```
+
+
 
 Device             Start       End   Sectors  Size Type
 /dev/nvme0n1p1      2048   4098047   4096000    2G EFI System

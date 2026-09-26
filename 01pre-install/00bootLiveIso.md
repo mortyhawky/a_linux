@@ -10,9 +10,11 @@ bindkey -v
 
 internet
 ```bash
-iwctl station wlan0 connect "103B 5"
-        sdbyorgufjuad
-ip a
+iwctl station wlan0 connect \
+    "103B 5"       --passphrase sdbyorgufjuad    ; ip a
+
+iwctl station wlan0 connect \ 
+    "Telia-9D67E0" --passphrase fh6hAmEhTsTpYyeX ; ip a
 ```
 
 tools
