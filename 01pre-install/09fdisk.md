@@ -32,3 +32,5 @@ volume label is the same as LABEL listed with lsblk -o LABEL
 sudo e2label /dev/sda
 ```
 
+
+
